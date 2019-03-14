@@ -1,18 +1,25 @@
 #container {
-    width: 300px;
+    width: 600px;
     margin: 0 auto;
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
 }
-
-div{
-    width:75%;
+#container > div{
+    height:100px;
+    width: 100px;
     background-color: aquamarine;
+
+    transition: all .2s linear;
+
 }
-div.first{
-    background-color: blueviolet;
-    height: 20px;
-    transition:height .2s ease-out;
+#container > div:nth-child(2){
+    background-color: coral;
+    height: 50px;
 }
-    div.first:hover{
-height: 100px;
+ #container > div:hover{
+    background-color:  yellow;
+    flex-grow: 2;
+    width: 150px;
     }
