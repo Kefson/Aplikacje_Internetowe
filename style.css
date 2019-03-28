@@ -1,25 +1,105 @@
-#container {
-    width: 600px;
-    margin: 0 auto;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-around
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-#container > div{
-    height:100px;
-    width: 100px;
-    background-color: aquamarine;
+#container {
+display: grid;
+width: 50%;
+height: 80%;
+background-color: black;
+margin: 20px auto;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+grid-gap: 3px;
+padding: 3px;
+}
+.container > div{
+    font: normal 25pt sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
-    transition: all .2s linear;
+}
 
+#container > div:nth-child(1){
+grid-row: 5;
+grid-column: 1/span 2;
+background-color: khaki;
 }
 #container > div:nth-child(2){
-    background-color: coral;
-    height: 50px;
+    grid-row: 4;
+    grid-column: 1;
+    background-color: khaki;
 }
- #container > div:hover{
-    background-color:  yellow;
-    flex-grow: 2;
-    width: 150px;
-    }
+#container > div:nth-child(3){
+    grid-row: 4;
+    grid-column: 2;
+    background-color: khaki;
+}
+#container > div:nth-child(4){
+    grid-row: 4;
+    grid-column: 3;
+    background-color: khaki;
+}
+#container > div:nth-child(5){
+    grid-row: 3;
+    grid-column: 1;
+    background-color: khaki;
+}
+#container > div:nth-child(6){
+    grid-row: 3;
+    grid-column: 2;
+    background-color: khaki;
+}
+#container > div:nth-child(7){
+    grid-row: 3;
+    grid-column: 3;
+    background-color: khaki;
+}
+#container > div:nth-child(8){
+    grid-row: 2;
+    grid-column: 1;
+    background-color: khaki;
+}
+#container > div:nth-child(9){
+    grid-row: 2;
+    grid-column: 2;
+    background-color: khaki;
+}
+#container > div:nth-child(10){
+    grid-row: 2;
+    grid-column: 3;
+    background-color: khaki;
+}
+#container > div:nth-child(11){
+    grid-row: 2;
+    grid-column: 4;
+    background-color: khaki;
+}
+#container > div:nth-child(12){
+    grid-row: 3;
+    grid-column: 4;
+    background-color: khaki;
+}
+#container > div:nth-child(13){
+    grid-row: 4;
+    grid-column: 4;
+    background-color: khaki;
+}
+#container > div:nth-child(14){
+    grid-row: 5;
+    grid-column: 4;
+    background-color: khaki;
+}
+#container > div:nth-child(15){
+    grid-row: 5;
+    grid-column: 3;
+    background-color: khaki;
+}
+#container > div:nth-child(16){
+    grid-row: 1;
+    grid-column: 1/span 4;
+    background-color: khaki;
+
+}
