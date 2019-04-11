@@ -19,7 +19,7 @@ const fields = [
 const init = () => {
 
     const container = document.getElementById('div');
-    container.id = 'container'
+    container.id='container';
 
     fields.forEach(each_array_element => {
        const div = document.createElement('div');
